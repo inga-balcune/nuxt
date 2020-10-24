@@ -1,6 +1,7 @@
 <template>
-	<div>
-		<div class="title">Title</div>
+	<div class="container">
+		<h1>Title</h1>
+		<h2>Subtitle</h2>
 	</div>
 </template>
 
@@ -9,7 +10,7 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-.title {
-	color: $color-primary;
+.container {
+	text-align: center;
 }
 </style>

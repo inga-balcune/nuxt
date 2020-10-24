@@ -10,7 +10,7 @@ html {
 	// defines what 1 rem is
 	font-size: 62.5%; // 1rem = 10px; 10px/16px = 62.5%
 	scroll-behavior: smooth;
-	background-color: $color-white;
+	background-color: $color-background;
 	height: 100%;
 
 	@include respond(tab-big) {
@@ -33,16 +33,16 @@ html {
 	}
 }
 
-/* Set page settings in body tag
+/* Set page settings in the body tag
 Adding border-box in body makes it a better practice */
 
 body {
 	box-sizing: border-box;
 	min-height: 100%;
-	background-color: $color-white;
+	background-color: $color-background;
 }
 
 ::selection {
-	background-color: $color-white;
-	color: $color-white;
+	background-color: $color-text-selection-background;
+	color: $color-text-selection-color;
 }
