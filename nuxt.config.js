@@ -39,14 +39,19 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: ['@nuxtjs/style-resources'],
   /*
    ** Build configuration
    */
+  styleResources: {
+    scss: [
+      'assets/sass/abstracts/_functions.scss',
+      'assets/sass/abstracts/_mixins.scss',
+      'assets/sass/abstracts/_variables.scss'
+    ]
+  },
   build: {
-    /*
-     ** You can extend webpack config here
-     */
+    extractCSS: true,
     extend(config, ctx) {}
   }
 }
